@@ -122,13 +122,25 @@ function insertValue() {
   let allShare = document.querySelectorAll(".share");
   let shareArr = Array.from(allShare);
 
-  delArr.map((item, index) => {
+  // delArr.map((item, index) => {
+  //   item.addEventListener("click", function () {
+  //     storeArr.splice(index, 1);
+  //     delArr.splice(index, 1);
+  //     insertValue();
+  //   });
+  // });
+
+setTimeOut(()=>{
+    delArr.map((item, index) => {
     item.addEventListener("click", function () {
       storeArr.splice(index, 1);
       delArr.splice(index, 1);
       insertValue();
     });
   });
+}, 2000);
+
+  
 
   shareArr.map((item, index) => {
     item.addEventListener("click", function () {
