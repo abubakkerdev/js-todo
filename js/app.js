@@ -130,17 +130,6 @@ function insertValue() {
     });
   });
 
-// setTimeOut(()=>{
-//     delArr.map((item, index) => {
-//     item.addEventListener("click", function () {
-//       storeArr.splice(index, 1);
-//       delArr.splice(index, 1);
-//       insertValue();
-//     });
-//   });
-// }, 120*1000);
-
-  
 
   shareArr.map((item, index) => {
     item.addEventListener("click", function () {
